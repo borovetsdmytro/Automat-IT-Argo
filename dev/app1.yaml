@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    chart: bitnami/apache
+    chart: apache
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 9.0.0
   destination:
