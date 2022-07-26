@@ -7,9 +7,10 @@ spec:
   project: default
   source:
     chart: app1-dev
-    repoURL: https://helm.nginx.com/stable
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 2.4.54
     helm:
-      releaseName: nginx-stable/nginx-ingress
+      releaseName: bitnami/apache
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
