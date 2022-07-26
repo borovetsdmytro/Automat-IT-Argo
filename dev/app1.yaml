@@ -8,9 +8,7 @@ spec:
   source:
     chart: bitnami/apache
     repoURL: https://charts.bitnami.com/bitnami
-    targetRevision: 2.4.54
-    helm:
-      releaseName: bitnami/apache
+    targetRevision: 9.0.0
   destination:
     server: "https://kubernetes.default.svc"
     namespace: dev
