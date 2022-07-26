@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev
+  name: dev-root
   namespace: argo-cd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,10 +11,10 @@ spec:
       prune: true
       selfHeal: true
   destination:
-    namespace: stage
+    namespace: dev
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: charts
+    path: dev
     repoURL: git@github.com:borovetsdmytro/Automat-IT-Argo.git
     targetRevision: HEAD
