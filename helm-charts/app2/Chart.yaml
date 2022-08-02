@@ -4,6 +4,6 @@ version: 1.0.0
 type: application
 
 dependencies:
-  - name: bitnami/apache
+  - name: apache
     repository: https://charts.bitnami.com/bitnami
     version: 1.2.60
