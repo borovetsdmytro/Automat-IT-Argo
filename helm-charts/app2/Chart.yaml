@@ -6,4 +6,4 @@ type: application
 dependencies:
   - name: apache
     repository: https://charts.bitnami.com/bitnami
-    version: 1.2.60
+    version: 9.1.14
