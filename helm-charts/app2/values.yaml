@@ -2,4 +2,4 @@ bitnami/apache:
   image:
     registry: docker.io
     repository: bitnami/apache
-    tag: 2.4.54-debian-11-r18
+    tag: 2.4.52-debian-10-r24
