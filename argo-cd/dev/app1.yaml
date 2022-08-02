@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-root
+  name: app1
   namespace: argo-cd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -15,6 +15,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: charts
-    repoURL: git@github.com:example/example.git
+    path: helm-charts/app2
+    repoURL: git@github.com:borovetsdmytro/Automat-IT-Argo.git
     targetRevision: HEAD
+    helm:
+      valueFiles:
+      - values.yaml

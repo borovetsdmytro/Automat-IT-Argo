@@ -1,0 +1,9 @@
+apiVersion: v2
+name: test-umbrella-2
+version: 1.0.0
+type: application
+
+dependencies:
+  - name: bitnami/apache
+    repository: https://charts.bitnami.com/bitnami
+    version: 1.2.60
