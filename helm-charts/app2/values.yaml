@@ -1,4 +1,4 @@
-bitnami/apache:
+apache:
   image:
     registry: docker.io
     repository: bitnami/apache
